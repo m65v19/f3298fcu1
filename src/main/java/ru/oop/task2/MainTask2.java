@@ -27,6 +27,10 @@ public class MainTask2 {
      */
     public static void moveTo(Person person, Position destination) {
         // TODO
+        person.catchTransport(person.getPosition())
+            .goAsNearAsPossible(destination)
+            .walk(destination);
+
         assert person.getPosition() == destination;
     }
 }

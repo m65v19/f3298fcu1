@@ -8,4 +8,6 @@ package ru.oop.task2;
  */
 interface Position {
     // Нам не важно что тут внутри
+
+
 }
