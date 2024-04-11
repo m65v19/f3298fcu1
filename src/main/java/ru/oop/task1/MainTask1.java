@@ -1,9 +1,9 @@
 package ru.oop.task1;
 
 /**
- * Задача: нужно добраться человеку на машине до заданного места.<br>
- * Но не всегда можно подъехать прямо к нужному месту, может понадобиться дойти пешком.<br>
- * Человек знает своё текущее местоположение (у него есть метод {@link Person#getPosition()}<br>
+ * Задача: нужно добраться человеку на машине до заданного места.<br> Но не всегда можно подъехать
+ * прямо к нужному месту, может понадобиться дойти пешком.<br> Человек знает своё текущее
+ * местоположение (у него есть метод {@link Person#getPosition()}<br>
  * <p>
  * <ul>
  *   <li>Код не должен превышать 6 строк</li>
@@ -17,11 +17,18 @@ package ru.oop.task1;
  */
 public class MainTask1 {
 
-    /**
-     * Переехать из текущего места в заданную точку
-     */
-    public static void moveTo(Person person, Position destination) {
-        // TODO
-        assert person.getPosition() == destination;
-    }
+  /**
+   * Переехать из текущего места в заданную точку
+   */
+  public static void moveTo(Person person, Position destination) {
+    // TODO
+    Car car = new Car(person.getPosition());
+    car.sitIn(person);
+    car.goAsNearAsPossible(destination);
+    car.getOut();
+    person.walk(destination);
+
+    assert person.getPosition() == destination;
+  }
+
 }
