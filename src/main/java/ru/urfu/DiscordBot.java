@@ -35,6 +35,7 @@ public class DiscordBot {
                         String chanelID = eventMessage.getChannelId().asString();
                         String messageFromUser = eventMessage.getContent();
                         // TODO
+                        sendMessage(chanelID,  "bot:" + messageFromUser);
                     }
                 });
         System.out.println("Discord бот запущен");

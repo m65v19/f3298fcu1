@@ -13,7 +13,7 @@
 
 ## Параметры запуска приложения
 
-Для запуска приложения нужно указать параметры в разделе "Environment Variables":
+Для запуска приложения нужно указать параметры в разделе "Environment Variables" (Это переменные окружения):
 * telegram_botName
 * telegram_token
 * discord_token
