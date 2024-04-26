@@ -11,9 +11,9 @@ public class Application {
         new TelegramBot(telegramBotName, telegramToken)
                 .start();
 
-        String discordToken = System.getenv("discord_token");
-        new DiscordBot(discordToken)
-                .start();
+//        String discordToken = System.getenv("discord_token");
+//        new DiscordBot(discordToken)
+//                .start();
 
         // сколько угодно чат платформ и все должны работать одинаково
     }
