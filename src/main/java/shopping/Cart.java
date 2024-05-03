@@ -59,8 +59,8 @@ public class Cart {
             throws IllegalArgumentException {
         if (product.getCount() - count <= 0) {
             throw new IllegalArgumentException(
-                    "Невозможно добавить товар '%s' в корзину, т.к. нет необходимого количества товаров"
-                            .formatted(product.getName()));
+                "Невозможно добавить товар '%s' в корзину, т.к. нет необходимого количества товаров"
+                    .formatted(product.getName()));
         }
     }
 
